@@ -22,7 +22,8 @@ namespace Proyecto
                 Console.Write("Escribe tu selección a continuación: ");
                 preguenta=Convert.ToInt32(Console.ReadLine());
                 string rep= "S";
-                    if (preguenta==1){
+                    if (preguenta==1)
+                    {
                         Console.Clear();
                         int aaa=0;
                         Console.WriteLine();
@@ -40,36 +41,32 @@ namespace Proyecto
                         Console.WriteLine();
                         Console.Clear();
                         while(aaa < add)
-                            { aaa++;
-                            Console.Write("Inserta el angulo 1 de la tensión 1: ");
-                            double ang1 = Convert.ToDouble(Console.ReadLine());
-                            Console.Write ("Inserta el angulo 2 de la tension 2: ");
-                            double ang2 = Convert.ToDouble(Console.ReadLine());
-                            Console.Write("Ingresa el Masa del objeto en kg: ");
-                            double masa1= Convert.ToDouble(Console.ReadLine());
-                            double masa= 9.81 * masa1 ;
-                            //Console.WriteLine("Masa:" +masa);  -  Funciones de ayuda 
-                            //Console.WriteLine("Angulo 1: " + ang1);
-                             //Calculo de las tensiones con las formulas desarrolladas
-                             //double angulos1 = Math.Cos(ang1* 2.0* Math.PI/360.0);
-                             //Console.WriteLine("Angulo Coseno: " + angulos1);
-                             tension1=(masa)/(((-Math.Cos(ang1* 2.0* Math.PI/360.0))*Math.Tan(ang2* 2.0* Math.PI/360.0)) + Math.Sin(ang1* 2.0* Math.PI/360.0));
-                             tension2= (-tension1 * Math.Cos(ang1* 2.0* Math.PI/360.0))/Math.Cos(ang2* 2.0* Math.PI/360.0);
-                             string tensionf2=String.Format("{0:0.000}",tension1);
-                             string tensionf1=String.Format("{0:0.000}",tension2);
+                            { 
+                                aaa++;
+                                Console.Write("Inserta el angulo 1 de la tensión 1: ");
+                                double ang1 = Convert.ToDouble(Console.ReadLine());
+                                Console.Write ("Inserta el angulo 2 de la tension 2: ");
+                                double ang2 = Convert.ToDouble(Console.ReadLine());
+                                Console.Write("Ingresa el Masa del objeto en kg: ");
+                                double masa1= Convert.ToDouble(Console.ReadLine());
+                                double masa= 9.81 * masa1 ;
+                                //Console.WriteLine("Masa:" +masa);  -  Funciones de ayuda 
+                                //Console.WriteLine("Angulo 1: " + ang1);
+                                //Calculo de las tensiones con las formulas desarrolladas
+                                //double angulos1 = Math.Cos(ang1* 2.0* Math.PI/360.0);
+                                //Console.WriteLine("Angulo Coseno: " + angulos1);
+                                tension1=(masa)/(((-Math.Cos(ang1* 2.0* Math.PI/360.0))*Math.Tan(ang2* 2.0* Math.PI/360.0)) + Math.Sin(ang1* 2.0* Math.PI/360.0));
+                                tension2= (-tension1 * Math.Cos(ang1* 2.0* Math.PI/360.0))/Math.Cos(ang2* 2.0* Math.PI/360.0);
+                                string tensionf2=String.Format("{0:0.000}",tension1);
+                                string tensionf1=String.Format("{0:0.000}",tension2);
 
-                            Console.WriteLine();
-                            Console.WriteLine("CALCULOS DEL SISTEMA DE FUERZAS " +aaa + ":");
-                            Console.WriteLine();
-                            Console.WriteLine("Resultado de la tension 1: "+ tensionf1 + "N");
-                            Console.WriteLine("Resultado de la tension 2: "+ tensionf2 + "N");
-                            Console.WriteLine();
-
-                        }
-
-                        
-                       
-                        
+                                Console.WriteLine();
+                                Console.WriteLine("CALCULOS DEL SISTEMA DE FUERZAS " +aaa + ":");
+                                Console.WriteLine();
+                                Console.WriteLine("Resultado de la tension 1: "+ tensionf1 + "N");
+                                Console.WriteLine("Resultado de la tension 2: "+ tensionf2 + "N");
+                                Console.WriteLine();
+                            }  
                     }
                     if(preguenta==2){
 
@@ -91,8 +88,9 @@ namespace Proyecto
                         pregunta3=Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine();
                         Console.Clear();
-                        switch(pregunta3){
-                            case 1:
+                        switch(pregunta3)
+                        {
+                        case 1:
                             Console.WriteLine("CALULO DE LA DISTANCIA TOTAL");
 
                             Console.WriteLine();
@@ -106,8 +104,8 @@ namespace Proyecto
                             Resultado_mostrar=String.Format("{0:0.00}",distancia_1);
                             Console.WriteLine("La distancia recorrida es de : " + Resultado_mostrar + " m ");
                             Console.WriteLine();
-                                break;
-                            case 2: // Calulado de la velocidad
+                        break;
+                        case 2: // Calulado de la velocidad
                             Console.WriteLine("CALULO DE LA VELOCIDAD TOTAL");
 
                             Console.WriteLine();
@@ -121,9 +119,9 @@ namespace Proyecto
                             Resultado_mostrar=String.Format("{0:0.00}",velocidad_1);
                             Console.WriteLine("La velocodad total es de : " + Resultado_mostrar + " m/s ");
                             Console.WriteLine();
-                                break;
+                        break;
                             
-                            case 3:
+                        case 3:
                             Console.WriteLine("CALULO DEL TIEMPO TOTAL");
 
                             Console.WriteLine();
@@ -138,14 +136,11 @@ namespace Proyecto
                             Console.WriteLine();
                             Console.WriteLine("El tiempo total es de : " + Resultado_mostrar + " segundos ");
                             Console.WriteLine();
-                                break;
+                        break;
                             
-                            default:
+                        default:
                             Console.WriteLine("ESTA OPCIÓN NO EXISTE INTENTALO DE NUEVO");
-                                break;
-
-
-
+                        break;
                         }
 
                         
@@ -388,12 +383,6 @@ namespace Proyecto
                                 Console.WriteLine();
                                 Console.WriteLine("Esa opción no existe intentalo de nuevo");
                                 break;
-
-                            
-
-
-
-
                         }
                         Console.WriteLine();
                         Console.WriteLine("Deseas realizar otra conversiónn: (Si/No)");
