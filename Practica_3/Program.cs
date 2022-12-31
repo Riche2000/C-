@@ -22,7 +22,6 @@ namespace PRACTICA_3
             Console.WriteLine("Valor 3: " + r3);
             Console.WriteLine("Valor 4: " + r4);
             Console.WriteLine("Valor 5: " + r5);
-            
         }
     }
 }
