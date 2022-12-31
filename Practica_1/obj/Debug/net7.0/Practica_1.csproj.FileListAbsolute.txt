@@ -1,0 +1,15 @@
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\bin\Debug\net7.0\Practica_1.exe
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\bin\Debug\net7.0\Practica_1.deps.json
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\bin\Debug\net7.0\Practica_1.runtimeconfig.json
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\bin\Debug\net7.0\Practica_1.dll
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\bin\Debug\net7.0\Practica_1.pdb
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\Practica_1.csproj.AssemblyReference.cache
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\Practica_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\Practica_1.AssemblyInfoInputs.cache
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\Practica_1.AssemblyInfo.cs
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\Practica_1.csproj.CoreCompileInputs.cache
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\Practica_1.dll
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\refint\Practica_1.dll
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\Practica_1.pdb
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\Practica_1.genruntimeconfig.cache
+C:\Users\yo789\OneDrive\Documentos\Proyectos\C-Sharp\Practica_1\obj\Debug\net7.0\ref\Practica_1.dll
