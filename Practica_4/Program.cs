@@ -12,7 +12,7 @@ namespace Proyecto
             double tension1, tension2, velocidad_1, distancia_1;
              
             do
-            {   Console.Clear();
+            {   Console.Clear();    //Limpia la consola
                 Console.WriteLine("Bienvenidos a una calculadora de fisica");
                 Console.WriteLine("1.- Fuerzas en equilibrio ");
                 Console.WriteLine("2.- Movimiento Rectilineo Uniforme ");
@@ -68,220 +68,226 @@ namespace Proyecto
                                 Console.WriteLine();
                             }  
                     }
-                    if(preguenta==2){
-
-                        
+                    if(preguenta==2)
+                    {    
                         while( rep=="S")
-                        { Console.Clear();
-                        Console.WriteLine(" Bienvenidos a la sección de Movimiento Rectilineo Uniforme ");
-                        Console.WriteLine();
-                        Console.WriteLine("*** Formula a utilizar ***");
-                        Console.WriteLine();
-                        Console.WriteLine(" d = vt");
+                        { 
+                            Console.Clear();
+                            Console.WriteLine(" Bienvenidos a la sección de Movimiento Rectilineo Uniforme ");
+                            Console.WriteLine();
+                            Console.WriteLine("*** Formula a utilizar ***");
+                            Console.WriteLine();
+                            Console.WriteLine(" d = vt");
 
-                        Console.WriteLine ();
-                        Console.WriteLine("1.- Distancia en metros");
-                        Console.WriteLine("2.- Velocidad en m/s");
-                        Console.WriteLine("3.- tiempo en segundos");
-                        Console.WriteLine();
-                        Console.Write("Escibre tu elección a continuación: ");
-                        pregunta3=Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine();
-                        Console.Clear();
-                        switch(pregunta3)
-                        {
-                        case 1:
-                            Console.WriteLine("CALULO DE LA DISTANCIA TOTAL");
+                            Console.WriteLine ();
+                            Console.WriteLine("1.- Distancia en metros");
+                            Console.WriteLine("2.- Velocidad en m/s");
+                            Console.WriteLine("3.- tiempo en segundos");
+                            Console.WriteLine();
+                            Console.Write("Escibre tu elección a continuación: ");
+                            pregunta3=Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine();
+                            Console.Clear();
+                            switch(pregunta3)
+                            {
+                                case 1:
+                                Console.WriteLine("CALULO DE LA DISTANCIA TOTAL");
 
-                            Console.WriteLine();
-                            Console.Write("Inserta la velocidad en m/s: ");
-                            velocidad_1 = Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine();
-                            Console.Write("Inserta el tiempo en segundos: ");
-                            tiempo1=Convert.ToInt32(Console.ReadLine());
-                            distancia_1= velocidad_1 * tiempo1;
+                                Console.WriteLine();
+                                Console.Write("Inserta la velocidad en m/s: ");
+                                velocidad_1 = Convert.ToDouble(Console.ReadLine());
+                                Console.WriteLine();
+                                Console.Write("Inserta el tiempo en segundos: ");
+                                tiempo1=Convert.ToInt32(Console.ReadLine());
+                                distancia_1= velocidad_1 * tiempo1;
 
-                            Resultado_mostrar=String.Format("{0:0.00}",distancia_1);
-                            Console.WriteLine("La distancia recorrida es de : " + Resultado_mostrar + " m ");
-                            Console.WriteLine();
-                        break;
-                        case 2: // Calulado de la velocidad
-                            Console.WriteLine("CALULO DE LA VELOCIDAD TOTAL");
+                                Resultado_mostrar=String.Format("{0:0.00}",distancia_1);
+                                Console.WriteLine("La distancia recorrida es de : " + Resultado_mostrar + " m ");
+                                Console.WriteLine();
+                                break;
 
-                            Console.WriteLine();
-                            Console.Write("Inserta la distancia recorrida en metros: ");
-                            distancia_1 = Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine();
-                            Console.Write("Inserta el tiempo en segundos: ");
-                            tiempo1=Convert.ToInt32(Console.ReadLine());
-                            velocidad_1= distancia_1 / tiempo1;
+                                case 2: // Calulado de la velocidad
+                                Console.WriteLine("CALULO DE LA VELOCIDAD TOTAL");
 
-                            Resultado_mostrar=String.Format("{0:0.00}",velocidad_1);
-                            Console.WriteLine("La velocodad total es de : " + Resultado_mostrar + " m/s ");
-                            Console.WriteLine();
-                        break;
+                                Console.WriteLine();
+                                Console.Write("Inserta la distancia recorrida en metros: ");
+                                distancia_1 = Convert.ToDouble(Console.ReadLine());
+                                Console.WriteLine();
+                                Console.Write("Inserta el tiempo en segundos: ");
+                                tiempo1=Convert.ToInt32(Console.ReadLine());
+                                velocidad_1= distancia_1 / tiempo1;
+
+                                Resultado_mostrar=String.Format("{0:0.00}",velocidad_1);
+                                Console.WriteLine("La velocodad total es de : " + Resultado_mostrar + " m/s ");
+                                Console.WriteLine();
+                                break;
                             
-                        case 3:
-                            Console.WriteLine("CALULO DEL TIEMPO TOTAL");
+                                case 3:
+                                Console.WriteLine("CALULO DEL TIEMPO TOTAL");
 
-                            Console.WriteLine();
-                            Console.Write("Inserta la velocidad en m/s: ");
-                            velocidad_1 = Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine();
-                            Console.Write("Inserta la distancia recorrida en metros: ");
-                            distancia_1=Convert.ToInt32(Console.ReadLine());
-                            tiempo1= velocidad_1 / distancia_1;
+                                Console.WriteLine();
+                                Console.Write("Inserta la velocidad en m/s: ");
+                                velocidad_1 = Convert.ToDouble(Console.ReadLine());
+                                Console.WriteLine();
+                                Console.Write("Inserta la distancia recorrida en metros: ");
+                                distancia_1=Convert.ToInt32(Console.ReadLine());
+                                tiempo1= velocidad_1 / distancia_1;
 
-                            Resultado_mostrar=String.Format("{0:0.00}",distancia_1);
-                            Console.WriteLine();
-                            Console.WriteLine("El tiempo total es de : " + Resultado_mostrar + " segundos ");
-                            Console.WriteLine();
-                        break;
+                                Resultado_mostrar=String.Format("{0:0.00}",distancia_1);
+                                Console.WriteLine();
+                                Console.WriteLine("El tiempo total es de : " + Resultado_mostrar + " segundos ");
+                                Console.WriteLine();
+                                break;
                             
-                        default:
-                            Console.WriteLine("ESTA OPCIÓN NO EXISTE INTENTALO DE NUEVO");
-                        break;
-                        }
+                                default:
+                                Console.WriteLine("ESTA OPCIÓN NO EXISTE INTENTALO DE NUEVO");
+                                break;
+                            }
 
-                        
-                        
+                            Console.WriteLine();
+                            Console.Write(" Deseas realizar otra operación de MRU(S/N): ");
+                            rep= Console.ReadLine().ToUpper().Substring(0,1);
+                            Console.WriteLine();
+                            Console.Clear();
 
-                        Console.WriteLine();
-                        Console.Write(" Deseas realizar otra operación de MRU(S/N): ");
-                        rep= Console.ReadLine().ToUpper().Substring(0,1);
-                        Console.WriteLine();
-                        Console.Clear();
                         }
                         
                     }
-                    if(preguenta==3){
-                        while( rep=="S"){Console.Clear();
-
-                        
-                        Console.WriteLine ();
-                        Console.WriteLine ("Bienvenidos a MOVIMIENTO RECTILINEO UNIFORMEMENTE ACELERADO");
-                        Console.WriteLine ();
-                        Console.WriteLine ("**Formulas a utilizar ***");
-                        Console.WriteLine();
-                        Console.WriteLine(" Vf   = Vi + at");
-                        Console.WriteLine(" X-Xi = Vit + 1/2 at²");
-                        Console.WriteLine(" vf²  = Vi² + 2ax");
-
-                        Console.WriteLine();
-                        Console.WriteLine("A continuación te presentamos las siguiente opciones para que calules lo que deseas conocer: ");
-                        Console.WriteLine();
-                        Console.WriteLine("1.- Tiempo de caida al suelo");
-                        Console.WriteLine("2.- Velocidad que tendra al caer al suelo");
-                        Console.WriteLine("3.- Calcular la posición de un objeto a partir del reposo que es arrojado a una cierta altura" );
-                        Console.WriteLine("4.- Calcular la altura de un edicio a partir del tiempo dado");
-                        Console.WriteLine();
-                        Console.Write("Escribe tu selección a continuación: "); 
-                        int pregunta2=Convert.ToInt32(Console.ReadLine());
-                        if (pregunta2==1){ 
-                            Console.WriteLine(" 1.- CALCULO DE TIEMPO DE CAIDA AL SUELO ");
-                            Console.WriteLine();
-                            Console.WriteLine("**Formula a utilizar**");
-                            Console.WriteLine("t = (vf - vi)/a ");
-                            
-                            Console.WriteLine();
-                            Console.WriteLine("Introduce la velocidad final en m/s: ");
-                            vf= Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine("Introduce la velocidad inicial en m/s:");
-                            vi= Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine();
-
-                            tiempo1= (vf- vi) /9.81 ;
-
-                            string tiempo2=String.Format("{0:0.00}",tiempo1);
-                            Console.WriteLine("El tiempo de caida es: " + tiempo2 + " s");
-                            Console.WriteLine();
-                        }
-                        if (pregunta2== 2){
-                            Console.WriteLine(" 2.- CALCULO VELOCIDAD FINAL (Antes del impacto con el suelo)");
-                            Console.WriteLine();
-                            Console.WriteLine("**Formula a utilizar**");
-                            Console.WriteLine("vf²  = Vi² + 2ax ");
-                            
-                            Console.WriteLine();
-                            Console.WriteLine("Introduce la altura total en metros: ");
-                            altura_1= Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine("Introduce la velocidad inicial en m/s:");
-                            vi= Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine();
-                            double vi1 = Math.Pow(vi,2);
-                            resultado =  vi1 + (2* ace*altura_1);
-                            resultado_1= Math.Sqrt(resultado);
-                            
-                            Resultado_mostrar=String.Format("{0:0.00}",resultado_1);
-                            Console.WriteLine("La Velocidad Final de caida es: " + Resultado_mostrar + " m/s");
-                            Console.WriteLine();
-
-                        }
-                        if (pregunta2==3) //OPCIÓN 3 DE MRUA 
+                    if(preguenta==3)
+                    {
+                        while( rep=="S")
                         {
-                            Console.WriteLine(" 3.- Calcular la posición de un objeto a partir del reposo que es arrojado a una cierta altura");
+                            Console.Clear();
+
+                            Console.WriteLine ();
+                            Console.WriteLine ("Bienvenidos a MOVIMIENTO RECTILINEO UNIFORMEMENTE ACELERADO");
+                            Console.WriteLine ();
+                            Console.WriteLine ("**Formulas a utilizar ***");
                             Console.WriteLine();
-                            Console.WriteLine("**Formula a utilizar**");
-                            Console.WriteLine("X-Xi = Vit + 1/2 at²");
+                            Console.WriteLine(" Vf   = Vi + at");
+                            Console.WriteLine(" X-Xi = Vit + 1/2 at²");
+                            Console.WriteLine(" vf²  = Vi² + 2ax");
+
+                            Console.WriteLine();
+                            Console.WriteLine("A continuación te presentamos las siguiente opciones para que calules lo que deseas conocer: ");
+                            Console.WriteLine();
+                            Console.WriteLine("1.- Tiempo de caida al suelo");
+                            Console.WriteLine("2.- Velocidad que tendra al caer al suelo");
+                            Console.WriteLine("3.- Calcular la posición de un objeto a partir del reposo que es arrojado a una cierta altura" );
+                            Console.WriteLine("4.- Calcular la altura de un edicio a partir del tiempo dado");
+                            Console.WriteLine();
+                            Console.Write("Escribe tu selección a continuación: "); 
+
+                            int pregunta2=Convert.ToInt32(Console.ReadLine());
+
+                            if (pregunta2==1)
+                            { 
+                                Console.WriteLine(" 1.- CALCULO DE TIEMPO DE CAIDA AL SUELO ");
+                                Console.WriteLine();
+                                Console.WriteLine("**Formula a utilizar**");
+                                Console.WriteLine("t = (vf - vi)/a ");
                             
-                            Console.WriteLine();
-                            Console.WriteLine("Introduce el tiempo de caida en segundos: ");
-                            tiempo1= Convert.ToDouble(Console.ReadLine());
+                                Console.WriteLine();
+                                Console.WriteLine("Introduce la velocidad final en m/s: ");
+                                vf= Convert.ToDouble(Console.ReadLine());
+                                Console.WriteLine("Introduce la velocidad inicial en m/s:");
+                                vi= Convert.ToDouble(Console.ReadLine());
+                                Console.WriteLine();
 
-                            Console.WriteLine();
-                            double  tiempo2 = Math.Pow(tiempo1,2);
-                            resultado = 0.5 * ace*tiempo2;
+                                tiempo1= (vf- vi) /9.81 ;
+
+                                string tiempo2=String.Format("{0:0.00}",tiempo1);
+                                Console.WriteLine("El tiempo de caida es: " + tiempo2 + " s");
+                                Console.WriteLine();
+                            }
+                            if (pregunta2== 2)
+                            {
+                                Console.WriteLine(" 2.- CALCULO VELOCIDAD FINAL (Antes del impacto con el suelo)");
+                                Console.WriteLine();
+                                Console.WriteLine("**Formula a utilizar**");
+                                Console.WriteLine("vf²  = Vi² + 2ax ");
                             
-                            Resultado_mostrar=String.Format("{0:0.00}",resultado);
-                            Console.WriteLine("La Posición del objeto es: " + Resultado_mostrar + " m ");
-                            Console.WriteLine();
-
-
-                        }
-                        if ( pregunta2==4) // OPCIÓN 4 DE MRUA 
-                        { Console.WriteLine(" 4.- Calcular la altura de un edicio a partir del tiempo dado");
-                            Console.WriteLine();
-                            Console.WriteLine("**Formula a utilizar**");
-                            Console.WriteLine("X-Xi = Vit + 1/2 at²");
+                                Console.WriteLine();
+                                Console.WriteLine("Introduce la altura total en metros: ");
+                                altura_1= Convert.ToDouble(Console.ReadLine());
+                                Console.WriteLine("Introduce la velocidad inicial en m/s:");
+                                vi= Convert.ToDouble(Console.ReadLine());
+                                Console.WriteLine();
+                                double vi1 = Math.Pow(vi,2);
+                                resultado =  vi1 + (2* ace*altura_1);
+                                resultado_1= Math.Sqrt(resultado);
                             
-                            Console.WriteLine();
-                            Console.WriteLine("Introduce el tiempo de caida en segundos: ");
-                            tiempo1= Convert.ToDouble(Console.ReadLine());
+                                Resultado_mostrar=String.Format("{0:0.00}",resultado_1);
+                                Console.WriteLine("La Velocidad Final de caida es: " + Resultado_mostrar + " m/s");
+                                Console.WriteLine();
 
-                            Console.WriteLine();
-                            double  tiempo2 = Math.Pow(tiempo1,2);
-                            resultado = 0.5 * ace*tiempo2;
+                            }
+                            if (pregunta2==3) //OPCIÓN 3 DE MRUA 
+                            {
+                                Console.WriteLine(" 3.- Calcular la posición de un objeto a partir del reposo que es arrojado a una cierta altura");
+                                Console.WriteLine();
+                                Console.WriteLine("**Formula a utilizar**");
+                                Console.WriteLine("X-Xi = Vit + 1/2 at²");
                             
-                            Resultado_mostrar=String.Format("{0:0.00}",resultado);
-                            Console.WriteLine("La Posición del objeto es: " + Resultado_mostrar + " m ");
-                            Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine("Introduce el tiempo de caida en segundos: ");
+                                tiempo1= Convert.ToDouble(Console.ReadLine());
 
-                        }
+                                Console.WriteLine();
+                                double  tiempo2 = Math.Pow(tiempo1,2);
+                                resultado = 0.5 * ace*tiempo2;
+                            
+                                Resultado_mostrar=String.Format("{0:0.00}",resultado);
+                                Console.WriteLine("La Posición del objeto es: " + Resultado_mostrar + " m ");
+                                Console.WriteLine();
+                            }
+                            if ( pregunta2==4) // OPCIÓN 4 DE MRUA 
+                            {   
+                                Console.WriteLine(" 4.- Calcular la altura de un edicio a partir del tiempo dado");
+                                Console.WriteLine();
+                                Console.WriteLine("**Formula a utilizar**");
+                                Console.WriteLine("X-Xi = Vit + 1/2 at²");
+                            
+                                Console.WriteLine();
+                                Console.WriteLine("Introduce el tiempo de caida en segundos: ");
+                                tiempo1= Convert.ToDouble(Console.ReadLine());
 
-                        Console.WriteLine("¿Deseas otra opción de MRUA? (Si/No)");
-                        rep=Console.ReadLine().ToUpper().Substring(0,1);
+                                Console.WriteLine();
+                                double  tiempo2 = Math.Pow(tiempo1,2);
+                                resultado = 0.5 * ace*tiempo2;
+                            
+                                Resultado_mostrar=String.Format("{0:0.00}",resultado);
+                                Console.WriteLine("La Posición del objeto es: " + Resultado_mostrar + " m ");
+                                Console.WriteLine();
+                            }
+
+                                Console.WriteLine("¿Deseas otra opción de MRUA? (Si/No)");
+                                rep=Console.ReadLine().ToUpper().Substring(0,1);
                         }
                     }
 
                     if (preguenta==4)
-                    { while(rep =="S")
-                    {   Console.Clear();
-                        Console.WriteLine(" BIENVENIDOS A LAS CONVERSIONES");
-                        Console.WriteLine();
-                        Console.WriteLine("1.- km/h     a  ms/s");
-                        Console.WriteLine("2.- m/s      a  km/h");
-                        Console.WriteLine("3.- km       a  millas");
-                        Console.WriteLine("4.- metros   a  km"); 
-                        Console.WriteLine("5.- kg-f     a  Newtons");
-                        Console.WriteLine("6.- millas/h a  km/h ");
-                        Console.WriteLine("7.- lb       a  kg");
+                    {
+                        while(rep =="S")
+                        {
+                            Console.Clear();
+                            Console.WriteLine(" BIENVENIDOS A LAS CONVERSIONES");
+                            Console.WriteLine();
+                            Console.WriteLine("1.- km/h     a  ms/s");
+                            Console.WriteLine("2.- m/s      a  km/h");
+                            Console.WriteLine("3.- km       a  millas");
+                            Console.WriteLine("4.- metros   a  km"); 
+                            Console.WriteLine("5.- kg-f     a  Newtons");
+                            Console.WriteLine("6.- millas/h a  km/h ");
+                            Console.WriteLine("7.- lb       a  kg");
 
-                        Console.WriteLine();
-                        Console.WriteLine("Escribe la opción elegida a continuación:");
-                        pregunta3= Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine();
+                            Console.WriteLine("Escribe la opción elegida a continuación:");
+                            pregunta3= Convert.ToInt32(Console.ReadLine());
                         
-                        switch(pregunta3){
-                            case 1: // Conversion de km/h a m/s
+                            switch(pregunta3)
+                            {
+                                case 1: // Conversion de km/h a m/s
                                 Console.Clear();
                                 Console.WriteLine("CONVERSION DE km/h a m/s");
                                 Console.WriteLine();
@@ -292,10 +298,9 @@ namespace Proyecto
                                 Console.WriteLine();
                                 Console.WriteLine("El resultado es: " + Resultado_mostrar + " m/s ");
                                 Console.WriteLine();
-
                                 break; 
 
-                            case 2:
+                                case 2:
                                 Console.Clear();
                                 Console.WriteLine();
                                 Console.WriteLine("CONVERSION DE m/s a km/h");
@@ -307,9 +312,9 @@ namespace Proyecto
                                 Console.WriteLine();
                                 Console.WriteLine("El resultado es: " + Resultado_mostrar + " km/h ");
                                 Console.WriteLine();
-
                                 break;
-                            case 3:
+
+                                case 3:
                                 Console.Clear();
                                 Console.WriteLine();
                                 Console.WriteLine("CONVERSION DE KM A MILLAS");
@@ -322,7 +327,8 @@ namespace Proyecto
                                 Console.WriteLine("El resultado es: " + Resultado_mostrar + " millas ");
                                 Console.WriteLine();
                                 break;
-                            case 4: //Metros a kilometros
+
+                                case 4: //Metros a kilometros
                                 Console.Clear();
                                 Console.WriteLine();
                                 Console.WriteLine("CONVERSION DE METROS A KILOMETROS");
@@ -335,7 +341,8 @@ namespace Proyecto
                                 Console.WriteLine("El resultado es: " + Resultado_mostrar + " km ");
                                 Console.WriteLine();
                                 break;
-                            case 5: // kilogramos fuerza a Newtons
+
+                                case 5: // kilogramos fuerza a Newtons
                                 Console.Clear();
                                 Console.WriteLine();
                                 Console.WriteLine("CONVERSION DE kg-f a Newtons");
@@ -349,7 +356,7 @@ namespace Proyecto
                                 Console.WriteLine();
                                 break;
 
-                            case 6: // Millas/h  a km/h
+                                case 6: // Millas/h  a km/h
                                 Console.Clear();
                                 Console.WriteLine();
                                 Console.WriteLine("CONVERSION DE millas/h a km/h");
@@ -363,7 +370,7 @@ namespace Proyecto
                                 Console.WriteLine();
                                 break;
 
-                            case 7: // lb a kilogramos
+                                case 7: // lb a kilogramos
                                 Console.Clear();
                                 Console.WriteLine();
                                 Console.WriteLine("CONVERSION DE LIBRAS A KILOGRAMOS");
@@ -378,22 +385,24 @@ namespace Proyecto
                                 break;
 
                             
-                            default:
+                                default:
                                 Console.Clear();
                                 Console.WriteLine();
                                 Console.WriteLine("Esa opción no existe intentalo de nuevo");
                                 break;
+                            }
+
+                            Console.WriteLine();
+                            Console.WriteLine("Deseas realizar otra conversiónn: (Si/No)");
+                            rep= Console.ReadLine().ToUpper().Substring(0,1);
                         }
-                        Console.WriteLine();
-                        Console.WriteLine("Deseas realizar otra conversiónn: (Si/No)");
-                        rep= Console.ReadLine().ToUpper().Substring(0,1);
-                    }
 
                     }
-                    if (preguenta != 1 && preguenta != 2 && preguenta != 3 && preguenta != 4 ){
+                    if (preguenta != 1 && preguenta != 2 && preguenta != 3 && preguenta != 4 )
+                    {
                         Console.WriteLine("Esta opción no existe");
                     }
-            // Seccion de decisión si quiere otra opción
+                // Seccion de decisión si quiere otra opción
                 Console.WriteLine();
                 Console.Write("¿Deseas otra opción? (Si/No)");
                 

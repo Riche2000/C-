@@ -24,12 +24,17 @@ namespace Nombre
             promedio1= Convert.ToDouble(Console.ReadLine()); //Tenemos que convertir a double
             
             Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine("Usuario, estos son tus datos:");
             Console.WriteLine();
             Console.WriteLine("Nombre de alumno: " + nombre1+ " Numero de cuenta: " + cuenta1+ " Promedio: "+ promedio1); 
             Console.WriteLine();
             //Aquí imprimimos en pantalla
             Console.WriteLine("Hasta luego.");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }

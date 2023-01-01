@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yo789\\OneDrive\\Documentos\\Proyectos\\C-Sharp\\Practica_1\\Practica_1.csproj": {}
+    "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Practica_1\\Practica_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yo789\\OneDrive\\Documentos\\Proyectos\\C-Sharp\\Practica_1\\Practica_1.csproj": {
+    "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Practica_1\\Practica_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yo789\\OneDrive\\Documentos\\Proyectos\\C-Sharp\\Practica_1\\Practica_1.csproj",
+        "projectUniqueName": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Practica_1\\Practica_1.csproj",
         "projectName": "Practica_1",
-        "projectPath": "C:\\Users\\yo789\\OneDrive\\Documentos\\Proyectos\\C-Sharp\\Practica_1\\Practica_1.csproj",
+        "projectPath": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Practica_1\\Practica_1.csproj",
         "packagesPath": "C:\\Users\\yo789\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yo789\\OneDrive\\Documentos\\Proyectos\\C-Sharp\\Practica_1\\obj\\",
+        "outputPath": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Practica_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yo789\\AppData\\Roaming\\NuGet\\NuGet.Config"
