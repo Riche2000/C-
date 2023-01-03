@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Practica_4\\Practica_4.csproj",
+      "projectUniqueName": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Calculadora_Fisica\\Practica_4.csproj",
       "projectName": "Practica_4",
-      "projectPath": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Practica_4\\Practica_4.csproj",
+      "projectPath": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Calculadora_Fisica\\Practica_4.csproj",
       "packagesPath": "C:\\Users\\yo789\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Practica_4\\obj\\",
+      "outputPath": "C:\\Users\\yo789\\Documents\\Proyectos\\C-Sharp\\Calculadora_Fisica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yo789\\AppData\\Roaming\\NuGet\\NuGet.Config"
